@@ -8,7 +8,7 @@ const TodoPage = () => {
   const [todos, setTodos] = useState([]);
   return (
     <Box>
-      <Header />
+      <Header title="Todo" />
       <AddTodo todos={todos} setTodos={setTodos} />
       <TodoList todos={todos} setTodos={setTodos} />
     </Box>
