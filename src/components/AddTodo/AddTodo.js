@@ -9,7 +9,6 @@ const AddTodo = ({ todos, setTodos }) => {
     e.preventDefault();
     // check if input is empty
     if (!todo) return;
-    console.log(todos);
     // clone todos
     let newTodos = structuredClone(todos);
     // push new element to the todo list
