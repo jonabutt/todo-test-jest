@@ -17,7 +17,11 @@ const FollowersList = () => {
   return (
     <Box marginTop={5} boxShadow={3} padding={2} borderRadius={2}>
       {followers.map((follower, index) => (
-        <Box sx={{ display: 'flex' }} paddingY={1} key={`follower-item-${index}`}>
+        <Box
+          data-testid={`follower-item-${index}`}
+          sx={{ display: 'flex' }}
+          paddingY={1}
+          key={`follower-item-${index}`}>
           <Avatar
             sx={{ alignSelf: 'center', width: 56, height: 56 }}
             alt={`${follower.name.first} ${follower.name.last}`}
