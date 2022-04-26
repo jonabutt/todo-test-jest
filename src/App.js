@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import TodoPage from './screens/TodoPage';
+import TodoPage from './screens/TodoPage/TodoPage';
 import { Container, createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 import FollowersPage from './screens/FollowersPage';
 

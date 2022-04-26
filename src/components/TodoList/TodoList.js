@@ -40,10 +40,14 @@ const TodoList = ({ todos, setTodos }) => {
           {todos.map((todo, index) => (
             <Box
               padding={0.5}
-              sx={{ ...todoStyle, textDecoration: todo.completed ? 'line-through' : '' }}
+              sx={{
+                ...todoStyle,
+                textDecoration: todo.completed ? 'line-through' : '',
+              }}
               key={todo.id}
               fullWidth
-              onClick={() => onClickTodo(index)}>
+              onClick={() => onClickTodo(index)}
+              data-testid="task-container">
               {todo.todo}
             </Box>
           ))}
